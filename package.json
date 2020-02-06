@@ -1,0 +1,34 @@
+{
+    "name": "lalrpop-highlight",
+    "description": "Syntax Highlighting for the LALRPOP Parser Generator",
+    "displayName": "LALRPOP Highlighting",
+    "version": "0.0.1",
+    "publisher": "mnxn",
+    "repository": {
+        "url": "https://github.com/mnxn/vscode-lalrpop-highlight"
+    },
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lalrpop",
+            "aliases": [
+                "LALRPOP",
+                "lalrpop"
+            ],
+            "extensions": [
+                ".lalrpop"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lalrpop",
+            "scopeName": "source.lalrpop",
+            "path": "./syntaxes/lalrpop.tmLanguage.json"
+        }]
+    }
+}
